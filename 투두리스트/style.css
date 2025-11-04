@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: 'Press Start 2P', cursive;
+  background-color: #fefae0;
+  overflow-x: hidden;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.background {
+  width: 100%;
+  display: block;
+}
+
+.todo-box {
+  position: absolute;
+  top: 15%;
+  left: 55%;
+  transform: translateX(-50%);
+  width: 40%;
+}
+
+.speech-bubble {
+  background: white;
+  border: 8px solid black;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 0px black;
+}
+
+ul#todo-list {
+  list-style: none;
+  padding-left: 0;
+  line-height: 1.8;
+  font-size: 12px;
+}
+
+.input-box {
+  display: flex;
+  margin-top: 10px;
+}
+
+input {
+  flex: 1;
+  font-size: 10px;
+  padding: 5px;
+  font-family: 'Press Start 2P', cursive;
+}
+
+button {
+  font-family: 'Press Start 2P', cursive;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  margin-left: 5px;
+}
