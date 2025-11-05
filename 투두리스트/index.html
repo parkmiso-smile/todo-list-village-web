@@ -2,29 +2,37 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>To-Do List Village</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
+    <!-- 픽셀아트 배경 이미지 -->
     <img src="assets/background.png" alt="배경" class="background" />
 
+    <!-- 말풍선 안의 투두 리스트 영역 -->
     <div class="todo-box">
       <div class="speech-bubble">
         <ul id="todo-list">
-          <li>❤️ open source HW 5</li>
-          <li>❤️ baekjoon class 1</li>
-          <li>❤️ home work_machine learninhv</li>
-          <li>👻 home work_computer network</li>
+          <!-- 할 일 항목이 여기 추가됨 -->
         </ul>
-        <div class="input-box">
-          <input id="todo-input" type="text" placeholder="할 일을 입력해요" />
-          <button onclick="addTodo()">+</button>
+
+        <div class="input-area">
+          <input type="text" id="todo-input" placeholder="오늘 할 일을 입력하세요" />
+          <button id="add-btn">+</button>
         </div>
       </div>
     </div>
+
+    <!-- 정원에 꽃이 심어지는 공간 -->
+    <div class="garden" id="garden">
+      <!-- 성공 시 꽃 이미지가 여기에 추가됨 -->
+    </div>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
+
